@@ -41,7 +41,7 @@
   width: 50px;
   height: 50px;
   border: 0;
-  color: #FFFFFF;
+  color: #ffffffd3;
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -51,11 +51,11 @@
 }
 
 .github {
-  color: black;
+  color: rgba(0, 0, 0, 0.829);
 }
 
 .linkedin {
-  color: #0077b5;
+  color: #00b2b5cb;
 }
 
 .angellist {
@@ -76,7 +76,7 @@
 }
 
 .github:hover {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 /* Buttons - Read Me, Contact Us */
