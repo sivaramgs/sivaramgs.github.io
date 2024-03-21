@@ -477,17 +477,17 @@ a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
 }
 
-#skills .card.large {
+#certifications .card.large {
   height: 360px;
 }
 
-#skills h4 {
+#certifications h4 {
   border-bottom: 1px solid #ddd;
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
 
-#skills .col img.responsive-img {
+#certifications .col img.responsive-img {
   margin: 0 auto;
   max-height: 100px;
   padding-bottom: 10px;
