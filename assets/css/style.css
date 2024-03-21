@@ -1,3 +1,4 @@
+@import "{{ site.theme }}";
 .profile-pic {
   position: relative;
   max-width:130px;
