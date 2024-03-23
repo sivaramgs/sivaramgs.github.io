@@ -489,11 +489,12 @@ a.hoverline:hover {
 
 #certifications .col img.responsive-img {
   margin: 0 auto;
-  max-height: 100px;
+  max-height: 120px;
   padding-bottom: 10px;
   text-align: left;
   vertical-align: left;
   display: table-cell;
+  
 }
 
 .card.large .card-content p {
