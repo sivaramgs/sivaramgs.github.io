@@ -246,7 +246,7 @@ ul.side-nav.fixed a {
 
 ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   border: none;
-  font-weight: 200;
+  font-weight: 190;
 }
 
 /* ul.side-nav.fixed li.logo {
@@ -402,7 +402,7 @@ h3 {
 }
 
 .card h5 {
-  font-size: 1.5rem;
+  font-size: 80%;
   margin-bottom: -0.5rem;
   margin-top: 2rem;
 }
