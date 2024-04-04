@@ -1,8 +1,4 @@
-# sivaramgs.github.io
 # Personal Portfolio ⚡️ 
-
-
-> https://sivaramgs.github.io
 
 ## Sections 📚
 ✔️ About me\
@@ -14,7 +10,7 @@
 ✔️ Contact Info\
 ✔️ Resume
 
-To see it, **[click here](https://sivaramgs.github.io/)**
+To see the website, **[click here](https://sivaramgs.github.io/)**
 
 ## Tools Used 🛠️
 * [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my static website (HTML, CSS, JS).
