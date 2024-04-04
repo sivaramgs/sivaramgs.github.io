@@ -4,16 +4,6 @@
 
 > https://sivaramgs.github.io
 
-### Website Preview
-<p align="center"> 
-  <kbd>
-    <a href="https://sivaramgs.github.io" target="_blank">
-  </a>
-  </kbd>
-</p>
-
-
-
 ## Sections 📚
 ✔️ About me\
 ✔️ Experience\
