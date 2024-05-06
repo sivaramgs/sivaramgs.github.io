@@ -1,9 +1,10 @@
 # Personal Portfolio ⚡️ 
 
 ## Sections 📚
-✔️ About me\
+✔️ About \
 ✔️ Experience\
 ✔️ Projects \
+✔️ Patent \
 ✔️ Skills \
 ✔️ Certifications \
 ✔️ Education\
