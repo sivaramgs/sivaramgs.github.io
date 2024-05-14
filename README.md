@@ -19,4 +19,4 @@ To see the website, **[click here](https://sivaramgs.github.io/)**
 * [<b>Typed.js</b>](https://mattboldt.com/demos/typed-js/) - JavaScript Library
 
 ## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for the details.
