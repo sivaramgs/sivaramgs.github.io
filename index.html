@@ -307,8 +307,42 @@ Fox (US), Rogers (Canada)</li>
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
+	<!-- First Project: Inference of LaMini Text2Text Generation with Amazon SageMaker using Hugging Face DLC -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="medallion_architecture" src="/assets/img/Blog_Generation_Architecture.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Inference of LaMini with Amazon SageMaker using Hugging Face DLC
+                  <i
+                    class="mdi-navigation-more-vert right"></i></span>
+               
+              </div>
+              <div class="card-reveal">
+                    <span class="card-title grey-text"><small>Project</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b>LaMini-T5-738M, Amazon Sagemaker, Hugging Face Deep Learning Container, Python 3.10 , Pytorch, Gradio</li>
+                  <li>Created a domain in Amazon Sagemaker for managing and organizing the machine learning workloads.</li>
+                  <li>Created a notebook instance (ml.c5.2xlarge) which is pre-installed with popular libraries for machine learning and to keep the compute environment secure for LaMini-T5-738M.</li>
+                  <li>Installed the required libraies and deployed the model with instance_type="ml.g4dn.xlarge" using Hugging Face Deep Learning Container.</li>
+                  <li>Noted the Endpoint created under the inference section in Amazon sagemaker.</li>
+                  <li>Tuned the model with hyperparameter payload and integrated the sagemaker endpoint with a gradio.</li>
+                  <li>Launched the gradio app with a public URL for LaMini-T5-738M text2text-generation task ineference.</li>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/sivaramgs/Inference-of-LaMini-Text2Text-Generation-with-Amazon-SageMaker-using-Hugging-Face-DLC"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a></li>
+                </ul>
+                <div class="card-action">
+              </div> 
+            </div> 
+          </div>
+        </div>
 
-          <!-- Secpnd Project: Serverless Blog Generation -->
+
+          <!-- Second Project: Serverless Blog Generation -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
