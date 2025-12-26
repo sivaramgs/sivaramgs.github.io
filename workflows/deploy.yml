@@ -27,22 +27,17 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: portfolio-modern/package-lock.json
           
       - name: Install dependencies
-        run: |
-          cd portfolio-modern
-          npm ci
+        run: npm ci
           
       - name: Build
-        run: |
-          cd portfolio-modern
-          npm run build
+        run: npm run build
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./portfolio-modern/dist
+          path: ./dist
 
   deploy:
     environment:
