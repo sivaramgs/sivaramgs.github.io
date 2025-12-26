@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X, Moon, Sun } from 'lucide-react'
@@ -132,3 +134,4 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
 }
 
 export default Navbar
+

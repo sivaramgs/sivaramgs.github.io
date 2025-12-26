@@ -26,6 +26,8 @@ dist-ssr
 # Build
 build
 .cache
+.next
+out
 
 # Environment variables
 .env

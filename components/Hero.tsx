@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
 import { useEffect, useState } from 'react'
@@ -138,3 +140,4 @@ const Hero = () => {
 }
 
 export default Hero
+
