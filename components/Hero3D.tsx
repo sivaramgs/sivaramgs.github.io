@@ -349,19 +349,6 @@ export default function Hero3D() {
           </div>
         </div>
       </div>
-
-      {/* Enhanced Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 z-10 -translate-x-1/2 animate-bounce">
-        <a 
-          href="#about" 
-          className="flex flex-col items-center gap-2 transition-colors duration-300 text-white/60 hover:text-white/90"
-        >
-          <span className="text-xs uppercase tracking-widest font-medium font-['Inter']">Scroll</span>
-          <div className="h-12 w-8 rounded-full border-2 relative border-white/30">
-            <div className="mx-auto mt-2 h-2 w-2 rounded-full animate-pulse bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
-          </div>
-        </a>
-      </div>
     </section>
   )
 }
