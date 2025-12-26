@@ -51,7 +51,7 @@ A stunning, modern portfolio website built with React, TypeScript, Tailwind CSS,
 ## 📂 Project Structure
 
 ```
-portfolio-modern/
+
 ├── public/              # Static assets
 ├── src/
 │   ├── components/      # React components
