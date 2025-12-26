@@ -13,7 +13,7 @@ const Experience = () => {
       logo: '/assets/img/evertz_logo.jpg',
       position: 'Senior Data Science Engineer',
       duration: 'April 2020 - Present',
-      location: 'Chennai, India',
+      location: 'Bengaluru, India',
       achievements: [
         'Integrated Glean for a unified AI-powered enterprise search and knowledge discovery.',
         'Designed & deployed an MLOps to detect model drift, reducing customer support overhead.',
@@ -30,7 +30,7 @@ const Experience = () => {
       logo: '/assets/img/dell_technologies.png',
       position: 'Software Engineer 1',
       duration: 'June 2017 - March 2020',
-      location: 'Chennai, India',
+      location: 'Bengaluru, India',
       achievements: [
         'Built and optimized data pipelines for Digital Lifecare improving accuracy and reliability.',
         'Containerized the Dell EMC Solutions Enabler product, reducing OS image size by 70%.',
