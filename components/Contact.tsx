@@ -50,13 +50,13 @@ const Contact = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-[350px_1fr] gap-8 max-w-6xl mx-auto items-stretch">
+        <div className="grid md:grid-cols-[300px_1fr] gap-8 max-w-full mx-auto items-start">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col"
+            className="flex flex-col h-full"
           >
             {/* Contact Cards */}
             <div className="flex flex-col justify-start gap-4 h-full">
