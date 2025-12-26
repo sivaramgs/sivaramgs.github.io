@@ -58,14 +58,6 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-8"
           >
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-white">Let's Connect</h3>
-              <p className="text-gray-300 mb-6">
-                Whether you have a question or just want to say hi, 
-                I'd love to hear from you. Choose your preferred method of communication.
-              </p>
-            </div>
-
             {/* Contact Cards */}
             <div className="space-y-4">
               <motion.a
