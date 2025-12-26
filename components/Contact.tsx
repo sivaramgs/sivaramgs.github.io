@@ -50,7 +50,7 @@ const Contact = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-stretch">
+        <div className="grid md:grid-cols-[350px_1fr] gap-8 max-w-6xl mx-auto items-stretch">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -59,10 +59,10 @@ const Contact = () => {
             className="flex flex-col"
           >
             {/* Contact Cards */}
-            <div className="flex flex-col justify-between gap-4 h-full">
+            <div className="flex flex-col justify-start gap-4 h-full">
               <motion.a
                 href="mailto:sivaramgs@outlook.com"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1"
+                className="glass rounded-xl p-5 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -79,7 +79,7 @@ const Contact = () => {
                 href="https://linkedin.com/in/sivaram-gs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1"
+                className="glass rounded-xl p-5 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -96,7 +96,7 @@ const Contact = () => {
                 href="https://github.com/sivaramgs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1"
+                className="glass rounded-xl p-5 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -109,7 +109,7 @@ const Contact = () => {
                 </div>
               </motion.a>
 
-              <div className="glass rounded-xl p-6 flex items-center gap-4 bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1">
+              <div className="glass rounded-xl p-5 flex items-center gap-4 bg-gray-900/70 backdrop-blur-lg border border-gray-700">
                 <div className="p-3 bg-green-900/50 rounded-lg">
                   <MapPin className="w-6 h-6 text-green-400" />
                 </div>
