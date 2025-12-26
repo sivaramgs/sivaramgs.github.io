@@ -18,9 +18,7 @@
    git push origin main
    ```
 
-### Option 2: Deploy from portfolio-modern folder
-
-If you want to deploy directly from the portfolio-modern folder:
+### Option 2: Manual Build and Deploy
 
 1. **Navigate to your GitHub repository root**:
    ```bash
@@ -29,14 +27,10 @@ If you want to deploy directly from the portfolio-modern folder:
 
 2. **Build the project**:
    ```bash
-   cd portfolio-modern
    npm run build
    ```
 
-3. **Copy dist contents to repository root**:
-   ```bash
-   Copy-Item -Path dist\* -Destination ..\ -Recurse -Force
-   ```
+3. **The dist folder will be automatically deployed via GitHub Actions**
 
 4. **Go back to repository root and commit**:
    ```bash

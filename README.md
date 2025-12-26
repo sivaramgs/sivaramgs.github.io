@@ -30,12 +30,7 @@ A stunning, modern portfolio website built with React, TypeScript, Tailwind CSS,
 
 ### Setup
 
-1. **Navigate to the project directory**:
-   ```bash
-   cd portfolio-modern
-   ```
-
-2. **Install dependencies**:
+1. **Install dependencies**:
    ```bash
    npm install
    ```
@@ -172,20 +167,16 @@ jobs:
           node-version: '18'
           
       - name: Install dependencies
-        run: |
-          cd portfolio-modern
-          npm ci
+        run: npm ci
           
       - name: Build
-        run: |
-          cd portfolio-modern
-          npm run build
+        run: npm run build
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./portfolio-modern/dist
+          publish_dir: ./dist
 ```
 
 ### Option 3: Manual Deployment
