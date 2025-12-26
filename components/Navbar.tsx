@@ -18,11 +18,12 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Patent', href: '#patent' },
     { name: 'Certificates', href: '#certifications' },
+    { name: 'Patent', href: '#patent' },
+    { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' },
   ]
 

@@ -50,19 +50,19 @@ const Contact = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-stretch">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-8"
+            className="flex flex-col"
           >
             {/* Contact Cards */}
-            <div className="space-y-4">
+            <div className="flex flex-col justify-between gap-4 h-full">
               <motion.a
                 href="mailto:sivaramgs@outlook.com"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
+                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -79,7 +79,7 @@ const Contact = () => {
                 href="https://linkedin.com/in/sivaram-gs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
+                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -96,7 +96,7 @@ const Contact = () => {
                 href="https://github.com/sivaramgs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
+                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -109,7 +109,7 @@ const Contact = () => {
                 </div>
               </motion.a>
 
-              <div className="glass rounded-xl p-6 flex items-center gap-4 bg-gray-900/70 backdrop-blur-lg border border-gray-700">
+              <div className="glass rounded-xl p-6 flex items-center gap-4 bg-gray-900/70 backdrop-blur-lg border border-gray-700 flex-1">
                 <div className="p-3 bg-green-900/50 rounded-lg">
                   <MapPin className="w-6 h-6 text-green-400" />
                 </div>
@@ -126,8 +126,9 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
+            className="flex"
           >
-            <form onSubmit={handleSubmit} className="glass rounded-2xl p-8 space-y-6 bg-gray-900/70 backdrop-blur-lg border border-gray-700">
+            <form onSubmit={handleSubmit} className="glass rounded-2xl p-8 space-y-6 bg-gray-900/70 backdrop-blur-lg border border-gray-700 w-full flex flex-col">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold mb-2 text-white">
                   Your Name
@@ -160,7 +161,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div>
+              <div className="flex-1 flex flex-col">
                 <label htmlFor="message" className="block text-sm font-semibold mb-2 text-white">
                   Your Message
                 </label>
@@ -170,8 +171,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none placeholder:text-gray-400"
+                  className="w-full flex-1 px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none placeholder:text-gray-400"
                   placeholder="Tell me about your project or inquiry..."
                 />
               </div>
