@@ -1,7 +1,8 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
+import { Suspense, useEffect } from 'react'
+import Navbar from '@/components/Navbar'
 
 // Dynamically import components to avoid SSR issues with Three.js
 const Hero3D = dynamic(() => import('@/components/Hero3D'), { ssr: false })
@@ -16,20 +17,32 @@ const Contact = dynamic(() => import('@/components/Contact'), { ssr: false })
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: false })
 
 export default function Home() {
+  useEffect(() => {
+    // Force dark mode permanently
+    document.documentElement.classList.add('dark')
+  }, [])
+
   return (
-    <main className="min-h-screen bg-white dark:bg-black">
-      <Suspense fallback={<div className="h-screen w-full bg-black" />}>
-        <Hero3D />
-      </Suspense>
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Certifications />
-      <Patent />
-      <Education />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main className="relative bg-black">
+        <div className="fixed inset-0 z-0">
+          <Suspense fallback={<div className="h-screen w-full bg-black" />}>
+            <Hero3D />
+          </Suspense>
+        </div>
+        <div className="relative z-10 pt-[100vh]">
+          <About />
+          <Experience />
+          <Skills />
+          <Projects />
+          <Certifications />
+          <Patent />
+          <Education />
+          <Contact />
+          <Footer />
+        </div>
+      </main>
+    </>
   )
 }

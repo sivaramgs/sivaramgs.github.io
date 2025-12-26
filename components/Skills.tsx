@@ -49,7 +49,7 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="py-16 bg-gray-50 dark:bg-[#050505] relative" ref={ref}>
+    <section id="skills" className="min-h-screen flex items-center justify-center bg-[#050505] relative z-10 py-20" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.div
@@ -58,10 +58,10 @@ const Skills = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-display font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-display font-bold text-white mb-4">
             Skills & Expertise
           </h2>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-lg text-gray-400">
             Comprehensive technical stack across AI/ML, Cloud, and Modern Software Engineering
           </p>
         </motion.div>
@@ -77,20 +77,20 @@ const Skills = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.02 }}
-                className="glass rounded-xl p-6 hover:shadow-2xl transition-all"
+                className="glass rounded-xl p-6 hover:shadow-2xl transition-all bg-gray-900/70 backdrop-blur-lg border border-gray-700"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className={`p-3 rounded-lg bg-gradient-to-br ${category.color}`}>
+                  <div className={`p-3 rounded-lg bg-gradient-to-br ${category.color} shadow-lg`}>
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold">{category.title}</h3>
+                  <h3 className="text-xl font-bold text-white">{category.title}</h3>
                 </div>
                 
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
                     <motion.span
                       key={skill}
-                      className="px-3 py-1.5 bg-white dark:bg-gray-800 rounded-full text-sm font-medium shadow-sm border border-gray-200 dark:border-gray-700"
+                      className="px-3 py-1.5 bg-gray-800 rounded-full text-sm font-medium shadow-sm border border-gray-600 text-gray-200"
                       whileHover={{ scale: 1.05, y: -2 }}
                       transition={{ type: 'spring', stiffness: 300 }}
                     >

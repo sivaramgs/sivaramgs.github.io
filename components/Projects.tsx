@@ -69,7 +69,7 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="py-16 bg-gray-50 dark:bg-[#050505] relative" ref={ref}>
+    <section id="projects" className="min-h-screen flex items-center justify-center bg-[#050505] relative z-10 py-20" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.div
@@ -78,10 +78,10 @@ const Projects = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-display font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-display font-bold text-white mb-4">
             Featured Projects
           </h2>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-lg text-gray-400">
             Personal AI/ML and Data Engineering projects
           </p>
         </motion.div>
@@ -95,22 +95,22 @@ const Projects = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -10 }}
-              className="glass rounded-2xl overflow-hidden hover:shadow-2xl transition-all group"
+              className="glass rounded-2xl overflow-hidden hover:shadow-2xl transition-all group bg-gray-900/80 backdrop-blur-lg border border-gray-700"
             >
               {/* Header with Gradient */}
-              <div className={`h-32 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
+              <div className={`h-32 bg-gradient-to-br ${project.gradient} relative overflow-hidden shadow-lg`}>
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">{project.icon}</span>
+                  <span className="text-6xl drop-shadow-lg">{project.icon}</span>
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary-400 transition-colors text-white">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm leading-relaxed">
+                <p className="text-gray-300 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
 
@@ -119,7 +119,7 @@ const Projects = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 rounded text-xs font-medium"
+                      className="px-2 py-1 bg-primary-900/40 text-primary-300 rounded text-xs font-medium border border-primary-800"
                     >
                       {tech}
                     </span>
@@ -127,13 +127,13 @@ const Projects = () => {
                 </div>
 
                 {/* Footer Icons */}
-                <div className="flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                <div className="flex gap-3 pt-4 border-t border-gray-700">
                   {project.github && (
                     <motion.a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                      className="flex items-center gap-2 text-sm text-gray-400 hover:text-primary-400 transition-colors"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >

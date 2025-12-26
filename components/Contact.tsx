@@ -37,7 +37,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-16 relative bg-white dark:bg-[#0a0a0a]" ref={ref}>
+    <section id="contact" className="min-h-screen flex items-center justify-center relative bg-[#0a0a0a] z-10 py-20" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -45,7 +45,7 @@ const Contact = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-display font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-display font-bold text-white mb-4">
             Get In Touch
           </h2>
         </motion.div>
@@ -59,8 +59,8 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-6">
+              <h3 className="text-2xl font-bold mb-6 text-white">Let's Connect</h3>
+              <p className="text-gray-300 mb-6">
                 Whether you have a question or just want to say hi, 
                 I'd love to hear from you. Choose your preferred method of communication.
               </p>
@@ -70,16 +70,16 @@ const Contact = () => {
             <div className="space-y-4">
               <motion.a
                 href="mailto:sivaramgs@outlook.com"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group"
+                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors">
-                  <Mail className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                <div className="p-3 bg-primary-900/50 rounded-lg group-hover:bg-primary-800/60 transition-colors">
+                  <Mail className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">Email</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">sivaramgs@outlook.com</p>
+                  <p className="font-semibold text-white">Email</p>
+                  <p className="text-sm text-gray-300">sivaramgs@outlook.com</p>
                 </div>
               </motion.a>
 
@@ -87,16 +87,16 @@ const Contact = () => {
                 href="https://linkedin.com/in/sivaram-gs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group"
+                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg group-hover:bg-blue-200 dark:group-hover:bg-blue-800/50 transition-colors">
-                  <Linkedin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                <div className="p-3 bg-blue-900/50 rounded-lg group-hover:bg-blue-800/60 transition-colors">
+                  <Linkedin className="w-6 h-6 text-blue-400" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">LinkedIn</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">linkedin.com/in/sivaram-gs</p>
+                  <p className="font-semibold text-white">LinkedIn</p>
+                  <p className="text-sm text-gray-300">linkedin.com/in/sivaram-gs</p>
                 </div>
               </motion.a>
 
@@ -104,26 +104,26 @@ const Contact = () => {
                 href="https://github.com/sivaramgs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group"
+                className="glass rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition-all group bg-gray-900/70 backdrop-blur-lg border border-gray-700"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <div className="p-3 bg-gray-100 dark:bg-gray-800 rounded-lg group-hover:bg-gray-200 dark:group-hover:bg-gray-700 transition-colors">
-                  <Github className="w-6 h-6 text-gray-800 dark:text-gray-200" />
+                <div className="p-3 bg-gray-800/80 rounded-lg group-hover:bg-gray-700/80 transition-colors">
+                  <Github className="w-6 h-6 text-gray-200" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">GitHub</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">github.com/sivaramgs</p>
+                  <p className="font-semibold text-white">GitHub</p>
+                  <p className="text-sm text-gray-300">github.com/sivaramgs</p>
                 </div>
               </motion.a>
 
-              <div className="glass rounded-xl p-6 flex items-center gap-4">
-                <div className="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                  <MapPin className="w-6 h-6 text-green-600 dark:text-green-400" />
+              <div className="glass rounded-xl p-6 flex items-center gap-4 bg-gray-900/70 backdrop-blur-lg border border-gray-700">
+                <div className="p-3 bg-green-900/50 rounded-lg">
+                  <MapPin className="w-6 h-6 text-green-400" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">Location</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Chennai, India</p>
+                  <p className="font-semibold text-white">Location</p>
+                  <p className="text-sm text-gray-300">Chennai, India</p>
                 </div>
               </div>
             </div>
@@ -135,9 +135,9 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <form onSubmit={handleSubmit} className="glass rounded-2xl p-8 space-y-6">
+            <form onSubmit={handleSubmit} className="glass rounded-2xl p-8 space-y-6 bg-gray-900/70 backdrop-blur-lg border border-gray-700">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold mb-2 text-white">
                   Your Name
                 </label>
                 <input
@@ -147,13 +147,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all placeholder:text-gray-400"
                   placeholder="John Doe"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold mb-2 text-white">
                   Your Email
                 </label>
                 <input
@@ -163,13 +163,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all placeholder:text-gray-400"
                   placeholder="john@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold mb-2 text-white">
                   Your Message
                 </label>
                 <textarea
@@ -179,7 +179,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-600 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none transition-all resize-none placeholder:text-gray-400"
                   placeholder="Tell me about your project or inquiry..."
                 />
               </div>

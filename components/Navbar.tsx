@@ -2,14 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, Moon, Sun } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
-interface NavbarProps {
-  isDark: boolean
-  toggleTheme: () => void
-}
-
-const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
+const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -66,38 +61,11 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
                 {link.name}
               </motion.a>
             ))}
-            
-            {/* Theme Toggle */}
-            <motion.button
-              onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Toggle theme"
-            >
-              {isDark ? (
-                <Sun className="w-5 h-5 text-gray-300" />
-              ) : (
-                <Moon className="w-5 h-5 text-gray-700" />
-              )}
-            </motion.button>
+
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
-            <motion.button
-              onClick={toggleTheme}
-              className="p-2 rounded-full bg-gray-200 dark:bg-gray-800"
-              whileTap={{ scale: 0.9 }}
-              aria-label="Toggle theme"
-            >
-              {isDark ? (
-                <Sun className="w-5 h-5 text-yellow-500" />
-              ) : (
-                <Moon className="w-5 h-5 text-gray-700" />
-              )}
-            </motion.button>
-            
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-700 dark:text-gray-300"

@@ -56,7 +56,7 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="py-16 relative bg-white dark:bg-[#0a0a0a]" ref={ref}>
+    <section id="experience" className="min-h-screen flex items-center justify-center relative bg-[#0a0a0a] z-10 py-20" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.div
@@ -65,10 +65,10 @@ const Experience = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-display font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-display font-bold text-white mb-4">
             Professional Experience
           </h2>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-lg text-gray-400">
             9.5+ years of delivering impactful AI/ML and data science solutions
           </p>
         </motion.div>
@@ -83,23 +83,23 @@ const Experience = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <div className="glass rounded-2xl p-8 hover:shadow-2xl transition-all">
+              <div className="glass rounded-2xl p-8 hover:shadow-2xl transition-all bg-gray-900/70 backdrop-blur-lg border border-gray-700">
                 {/* Company Header - Centered */}
                 <div className="flex flex-col items-center text-center mb-6">
                   <img 
                     src={exp.logo} 
                     alt={`${exp.company} logo`}
-                    className="w-16 h-16 object-contain rounded-lg bg-white p-2 mb-4"
+                    className="w-16 h-16 object-contain rounded-lg bg-white p-2 mb-4 shadow-md"
                   />
-                  <h3 className="text-2xl font-bold text-primary-600 dark:text-primary-400">
+                  <h3 className="text-2xl font-bold text-primary-400">
                     {exp.company}
                   </h3>
-                  <p className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-1">
+                  <p className="text-lg font-semibold text-gray-100 mt-1">
                     {exp.position}
                   </p>
                   
                   {/* Duration & Location */}
-                  <div className="flex flex-wrap justify-center gap-4 mt-3 text-sm text-gray-600 dark:text-gray-400">
+                  <div className="flex flex-wrap justify-center gap-4 mt-3 text-sm text-gray-300">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
                       <span>{exp.duration}</span>
@@ -116,12 +116,12 @@ const Experience = () => {
                   {exp.achievements.map((achievement, i) => (
                     <motion.li
                       key={i}
-                      className="text-gray-700 dark:text-gray-300 text-center"
+                      className="text-gray-200 text-center"
                       initial={{ opacity: 0, y: 10 }}
                       animate={isInView ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.4, delay: index * 0.2 + i * 0.1 }}
                     >
-                      <span className="text-primary-600 dark:text-primary-400">• </span>
+                      <span className="text-primary-400 font-bold">• </span>
                       {achievement}
                     </motion.li>
                   ))}
