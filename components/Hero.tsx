@@ -35,7 +35,7 @@ const Hero = () => {
     }, isDeleting ? 50 : 100)
 
     return () => clearTimeout(timeout)
-  }, [charIndex, isDeleting, roleIndex])
+  }, [charIndex, isDeleting, roleIndex, roles])
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">

@@ -1,3 +1,15 @@
+/**
+ * Education Component
+ * 
+ * Academic background section featuring:
+ * - Two educational qualifications (Master's and Bachelor's degrees)
+ * - Course highlights and key subjects
+ * - WES credential verification link
+ * - Institution names and locations
+ * - Study duration
+ * - Animated card layout
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -6,7 +18,9 @@ import { useRef } from 'react'
 import { GraduationCap, Award, ExternalLink } from 'lucide-react'
 
 const Education = () => {
+  // Reference for intersection observer
   const ref = useRef(null)
+  // Trigger animations when section comes into view
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const education = [

@@ -1,3 +1,16 @@
+/**
+ * Projects Component
+ * 
+ * Personal projects showcase featuring:
+ * - Seven featured AI/ML and data engineering projects
+ * - Detailed project descriptions and tech stacks
+ * - Gradient-colored project headers with emojis
+ * - GitHub repository links
+ * - Responsive 3-column grid layout
+ * - Animated cards with hover effects
+ * - Call-to-action link to GitHub profile
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -6,9 +19,21 @@ import { useRef } from 'react'
 import { ExternalLink, Github } from 'lucide-react'
 
 const Projects = () => {
+  // Reference for intersection observer
   const ref = useRef(null)
+  // Trigger animations when section comes into view
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
+  /**
+   * Featured projects data
+   * Each project includes:
+   * - title: Project name
+   * - description: Detailed project overview
+   * - tech: Array of technologies used
+   * - gradient: Tailwind gradient classes for visual distinction
+   * - icon: Emoji representing project theme
+   * - github: Link to GitHub repository
+   */
   const projects = [
     {
       title: 'Inference of LaMini with Amazon SageMaker using Hugging Face DLC',

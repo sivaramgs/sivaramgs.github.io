@@ -1,3 +1,14 @@
+/**
+ * Patent Component
+ * 
+ * US Patent showcase featuring:
+ * - Patent title and detailed description
+ * - Patent number with external link to official documentation
+ * - Publication date
+ * - Award icon for visual emphasis
+ * - Single prominent card layout
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -6,7 +17,9 @@ import { useRef } from 'react'
 import { Award, ExternalLink, Calendar } from 'lucide-react'
 
 const Patent = () => {
+  // Reference for intersection observer
   const ref = useRef(null)
+  // Trigger animations when section comes into view
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (

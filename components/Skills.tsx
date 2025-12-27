@@ -1,3 +1,14 @@
+/**
+ * Skills Component
+ * 
+ * Technical skills showcase featuring:
+ * - Six categorized skill groups (Languages, Databases, Platforms, Libraries, MLOps, Frameworks)
+ * - Icon-based visual representation for each category
+ * - Interactive hover effects on skill badges
+ * - Grid layout with gradient-colored category headers
+ * - Scroll-triggered staggered animations
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -6,9 +17,19 @@ import { useRef } from 'react'
 import { Code, Database, Cloud, Brain, Cpu, GitBranch } from 'lucide-react'
 
 const Skills = () => {
+  // Reference for intersection observer
   const ref = useRef(null)
+  // Trigger animations when section comes into view
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
+  /**
+   * Skills categorized by domain
+   * Each category includes:
+   * - title: Category name
+   * - icon: Lucide React icon component
+   * - skills: Array of technology/tool names
+   * - color: Tailwind gradient classes for visual distinction
+   */
   const skillCategories = [
     {
       title: 'Languages',
@@ -66,7 +87,7 @@ const Skills = () => {
           </p>
         </motion.div>
 
-        {/* Skills Grid */}
+        {/* Skills Grid - Responsive 3-column layout */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => {
             const Icon = category.icon
@@ -79,6 +100,7 @@ const Skills = () => {
                 whileHover={{ scale: 1.02 }}
                 className="glass rounded-xl p-6 hover:shadow-2xl transition-all bg-gray-900/70 backdrop-blur-lg border border-gray-700"
               >
+                {/* Category Header with Icon */}
                 <div className="flex items-center gap-3 mb-4">
                   <div className={`p-3 rounded-lg bg-gradient-to-br ${category.color} shadow-lg`}>
                     <Icon className="w-6 h-6 text-white" />
@@ -86,6 +108,7 @@ const Skills = () => {
                   <h3 className="text-xl font-bold text-white">{category.title}</h3>
                 </div>
                 
+                {/* Skill Badges */}
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
                     <motion.span

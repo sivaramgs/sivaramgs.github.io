@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls, Sphere, MeshDistortMaterial, Float, Text3D, Environment } from '@react-three/drei'
+import { OrbitControls, Sphere, MeshDistortMaterial, Float } from '@react-three/drei'
 import * as THREE from 'three'
 import gsap from 'gsap'
 
@@ -235,6 +235,7 @@ export default function Hero3D() {
     return () => {
       clearInterval(interval)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

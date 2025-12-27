@@ -1,3 +1,13 @@
+/**
+ * Experience Component
+ * 
+ * Professional work experience timeline featuring:
+ * - Three major work positions in reverse chronological order
+ * - Company logos and detailed achievement lists
+ * - Animated cards with glassmorphism effects
+ * - Scroll-triggered staggered animations
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -6,9 +16,15 @@ import { useRef } from 'react'
 import { Calendar, MapPin } from 'lucide-react'
 
 const Experience = () => {
+  // Reference for intersection observer
   const ref = useRef(null)
+  // Trigger animations when section comes into view
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
+  /**
+   * Work experience data
+   * Array of professional positions with detailed achievements
+   */
   const experiences = [
     {
       company: 'Evertz India Pvt Ltd',
@@ -73,7 +89,7 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        {/* Timeline */}
+        {/* Experience Timeline */}
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
             <motion.div
@@ -84,16 +100,21 @@ const Experience = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
               <div className="glass rounded-2xl p-8 hover:shadow-2xl transition-all bg-gray-900/70 backdrop-blur-lg border border-gray-700">
-                {/* Company Header - Centered */}
+                {/* Company Header - Centered Layout */}
                 <div className="flex flex-col items-center text-center mb-6">
+                  {/* Company Logo */}
                   <img 
                     src={exp.logo} 
                     alt={`${exp.company} logo`}
                     className="w-16 h-16 object-contain rounded-lg bg-white p-2 mb-4 shadow-md"
                   />
+                  
+                  {/* Company Name */}
                   <h3 className="text-2xl font-bold text-primary-400">
                     {exp.company}
                   </h3>
+                  
+                  {/* Position Title */}
                   <p className="text-lg font-semibold text-gray-100 mt-1">
                     {exp.position}
                   </p>
@@ -111,7 +132,7 @@ const Experience = () => {
                   </div>
                 </div>
 
-                {/* Achievements - Single line with wrap */}
+                {/* Key Achievements List */}
                 <ul className="space-y-3">
                   {exp.achievements.map((achievement, i) => (
                     <motion.li

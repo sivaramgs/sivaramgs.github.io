@@ -1,9 +1,20 @@
+/**
+ * Footer Component
+ * 
+ * Site footer with:
+ * - Copyright information with dynamic year
+ * - Social media links (GitHub, LinkedIn, Email)
+ * - Animated hover effects on social icons
+ * - Clean, minimal design
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail } from 'lucide-react'
 
 const Footer = () => {
+  // Get current year dynamically for copyright
   const currentYear = new Date().getFullYear()
 
   return (

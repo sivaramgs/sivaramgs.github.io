@@ -1,3 +1,15 @@
+/**
+ * Certifications Component
+ * 
+ * Professional certifications showcase featuring:
+ * - Six AWS Cloud Quest certifications
+ * - Badge images for each certification
+ * - External links to Credly verification
+ * - Compact grid layout (3 columns)
+ * - Hover effects and animations
+ * - Scroll-triggered staggered entry
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -6,7 +18,9 @@ import { useRef } from 'react'
 import { CheckCircle } from 'lucide-react'
 
 const Certifications = () => {
+  // Reference for intersection observer
   const ref = useRef(null)
+  // Trigger animations when section comes into view
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const certifications = [

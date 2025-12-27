@@ -1,3 +1,13 @@
+/**
+ * Navbar Component
+ * 
+ * Responsive navigation bar with:
+ * - Smooth scroll animations using Framer Motion
+ * - Dynamic background on scroll
+ * - Mobile hamburger menu
+ * - Navigation links to all page sections
+ */
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -5,17 +15,27 @@ import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  // State management
+  const [isScrolled, setIsScrolled] = useState(false)        // Track scroll position for navbar style
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)  // Control mobile menu visibility
 
+  /**
+   * Scroll event listener
+   * Updates navbar appearance when user scrolls past threshold
+   */
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
+    
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  /**
+   * Navigation links configuration
+   * Each link maps to a section ID on the page
+   */
   const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
@@ -29,8 +49,10 @@ const Navbar = () => {
 
   return (
     <motion.nav
+      // Animate navbar entrance from top
       initial={{ y: -100 }}
       animate={{ y: 0 }}
+      // Dynamic styling based on scroll position
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-blur-lg shadow-sm border-b border-gray-200 dark:border-gray-800 py-3'
@@ -39,7 +61,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
+          {/* Logo/Brand */}
           <motion.a
             href="#hero"
             className="text-xl font-display font-bold text-gray-900 dark:text-white"
@@ -49,7 +71,7 @@ const Navbar = () => {
             Sivaram GS
           </motion.a>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <motion.a
@@ -77,7 +99,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Dropdown */}
         {isMobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}

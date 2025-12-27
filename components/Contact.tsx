@@ -1,3 +1,14 @@
+/**
+ * Contact Component
+ * 
+ * Contact information section featuring:
+ * - Four contact methods in a horizontal card layout
+ * - Email, LinkedIn, GitHub, and Location information
+ * - Interactive cards with hover animations
+ * - Icon-based visual representation
+ * - Responsive grid layout
+ */
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -6,7 +17,9 @@ import { useRef } from 'react'
 import { Mail, Linkedin, Github, MapPin } from 'lucide-react'
 
 const Contact = () => {
+  // Reference for intersection observer
   const ref = useRef(null)
+  // Trigger animations when section comes into view
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
