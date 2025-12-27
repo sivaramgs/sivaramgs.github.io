@@ -106,7 +106,7 @@ const Education = () => {
                   <div className="flex-1">
                     <div className="mb-4">
                       <div>
-                        <h3 className="text-2xl font-bold mb-1 text-white">{edu.degree}</h3>
+                        <h3 className="text-2xl font-bold mb-1 text-white whitespace-nowrap">{edu.degree}</h3>
                         <p className="text-gray-200 font-medium">
                           {edu.institution}
                         </p>
