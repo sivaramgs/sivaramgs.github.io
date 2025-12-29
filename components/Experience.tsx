@@ -137,7 +137,7 @@ const Experience = () => {
                   {exp.achievements.map((achievement, i) => (
                     <motion.li
                       key={i}
-                      className="text-gray-200 text-center"
+                      className="text-gray-200 text-left"
                       initial={{ opacity: 0, y: 10 }}
                       animate={isInView ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.4, delay: index * 0.2 + i * 0.1 }}
@@ -157,4 +157,3 @@ const Experience = () => {
 }
 
 export default Experience
-
