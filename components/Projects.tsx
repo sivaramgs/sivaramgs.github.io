@@ -36,6 +36,14 @@ const Projects = () => {
    */
   const projects = [
     {
+      title: 'Agentic AI Customer Service Databricks RAG App With Unity Catalog Functions as MCP Tools',
+      description: 'Created a dual source RAG solution for a customer service scenario and used UC functions as MCP tools',
+      tech: ['gemma-3-12b-it', 'Databricks AI Agent', 'Delta Tables', 'MLFLOW', 'Unity Catalog Functions', 'RAG', 'MCP'],
+      gradient: 'from-orange-500 to-red-500',
+      icon: '',
+      github: 'https://github.com/sivaramgs/Agentic_AI_Customer_Service_Databricks_RAG_App_with_MCP_Tools',
+    },
+    {
       title: 'Inference of LaMini with Amazon SageMaker using Hugging Face DLC',
       description: 'Created domain in Amazon SageMaker and deployed LaMini-T5-738M using Hugging Face Deep Learning Container. Tuned the model with hyperparameter payload and integrated with Gradio for text2text-generation inference.',
       tech: ['LaMini-T5-738M', 'Amazon SageMaker', 'Hugging Face DLC', 'PyTorch', 'Gradio', 'Python'],
