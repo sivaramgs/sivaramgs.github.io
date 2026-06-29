@@ -14,7 +14,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { LLM, AI, Data, Observability, Cloud, GitBranch } from 'lucide-react'
+import { BrainCircuit, Bot, Database, Activity, Cloud, GitBranch } from 'lucide-react'
 
 const Skills = () => {
   // Reference for intersection observer
@@ -33,25 +33,25 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Agentic AI & LLM Orchestration',
-      icon: LLM,
+      icon: BrainCircuit,
       skills: ['LangGraph', 'CrewAI', 'AutoGen', 'LangChain', 'MCP', 'Google ADK', 'IBM BeeAI', 'MCP', 'A2A', 'Agent SDK', 'Agentcore'],
       color: 'from-blue-500 to-blue-700',
     },
     {
       title: 'AI & Data Science',
-      icon: AI,
+      icon: Bot,
       skills: ['PyTorch', 'PySpark', 'Python', 'Optuna', 'Advanced Tracking (BoT-SORT)', 'RF-DETR', 'Video LLaVA', 'vLLM', 'Ollama', 'LoRA', 'QLoRA'],
       color: 'from-green-500 to-green-700',
     },
     {
       title: 'Data Architecture (RAG & Graph)',
-      icon: Data,
+      icon: Database,
       skills: ['Pinecone', 'PGVector', 'Neo4j', 'PostgreSQL', 'Redis', 'Snowflake', 'Databricks', 'DBT'],
       color: 'from-cyan-500 to-cyan-700',
     },
     {
       title: 'Production & Observability',
-      icon: Observability,
+      icon: Activity,
       skills: ['LangSmith', 'MLflow', 'ZenML', 'Kedro', 'Airflow', 'Kafka', 'Deep Eval'],
       color: 'from-purple-500 to-purple-700',
     },
