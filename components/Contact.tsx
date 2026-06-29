@@ -107,7 +107,7 @@ const Contact = () => {
             </div>
             <div>
               <p className="font-semibold text-white mb-1">Location</p>
-              <p className="text-sm text-gray-300">Chennai, India</p>
+              <p className="text-sm text-gray-300">Singapore</p>
             </div>
           </motion.div>
         </div>
