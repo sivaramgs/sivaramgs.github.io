@@ -38,48 +38,6 @@ const Certifications = () => {
       image: '/assets/img/neo4j_gds.png',
       link: 'https://graphacademy.neo4j.com/c/076a5de4-4015-4c38-aa93-2e18048da355/',
     },
-    {
-      title: 'AWS Cloud Quest: Machine Learning',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/machine_learning.png',
-      link: 'https://www.credly.com/badges/51fcc1d2-8f44-4b57-b4b6-77937c97d55b',
-    },
-    {
-      title: 'AWS Cloud Quest: Data Analytics',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/data_analytics.png',
-      link: 'https://www.credly.com/badges/16915592-65da-429e-8aca-60d2bda54f9a',
-    },
-    {
-      title: 'AWS Cloud Quest: Serverless Developer',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/serverless_developer.png',
-      link: 'https://www.credly.com/badges/82fe44a5-b072-426e-8b80-a390426c4447',
-    },
-    {
-      title: 'AWS Cloud Quest: Solutions Architect',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/solution_architect.png',
-      link: 'https://www.credly.com/badges/31da1087-aecd-472a-bd31-14e0778e6342',
-    },
-    {
-      title: 'AWS Cloud Quest: Security',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/security.png',
-      link: 'https://www.credly.com/badges/d845fffd-94af-4008-82fb-9c3d04b5ec1e',
-    },
-    {
-      title: 'AWS Cloud Quest: Cloud Practitioner',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/cloud_practitioner.png',
-      link: 'https://www.credly.com/badges/615291ab-ea37-4839-b2dc-8279aaa46dd2',
-    },
   ]
 
   return (
@@ -92,7 +50,7 @@ const Certifications = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-white mb-2">
-            Certificates
+            Certifications
           </h2>
         </motion.div>
 
