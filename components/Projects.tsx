@@ -59,55 +59,6 @@ const Projects = () => {
       icon: '📊',
       github: 'https://github.com/sivaramgs/End-to-End-Azure-Data-Engineering-Real-Time-Project',
     },
-    
-    {
-      title: 'Inference of LaMini with Amazon SageMaker using Hugging Face DLC',
-      description: 'Created domain in Amazon SageMaker and deployed LaMini-T5-738M using Hugging Face Deep Learning Container. Tuned the model with hyperparameter payload and integrated with Gradio for text2text-generation inference.',
-      tech: ['LaMini-T5-738M', 'Amazon SageMaker', 'Hugging Face DLC', 'PyTorch', 'Gradio', 'Python'],
-      gradient: 'from-orange-500 to-red-500',
-      icon: '🤖',
-      github: 'https://github.com/sivaramgs/Inference-of-LaMini-Text2Text-Generation-with-Amazon-SageMaker-using-Hugging-Face-DLC',
-    },
-    {
-      title: 'Serverless Blog Generation with Titan Model Using Bedrock in Lambda',
-      description: 'Built serverless blog generation using AWS Lambda and Amazon Bedrock with Titan Text G1 Express model. Created API Gateway to trigger Lambda function via POST request from Postman, monitored CloudWatch logs, and saved generated blogs to S3.',
-      tech: ['AWS Lambda', 'Amazon Bedrock', 'Titan Text G1', 'API Gateway', 'S3', 'CloudWatch', 'Postman'],
-      gradient: 'from-violet-500 to-purple-500',
-      icon: '📝',
-      github: 'https://github.com/sivaramgs',
-    },
-    {
-      title: 'Custom WebSearch LLM Agent with Llama3 Instruct 8B Using Ollama',
-      description: 'Built custom LLM agent using Llama3 Instruct 8B with Ollama framework. Created planning agent for query generation and integration agent for Google search via Serper API. Scraped web pages and performed quality assessment before generating final response.',
-      tech: ['Llama3 Instruct 8B', 'Ollama', 'Serper API', 'Python', 'Web Scraping'],
-      gradient: 'from-indigo-500 to-purple-500',
-      icon: '🔎',
-      github: 'https://github.com/sivaramgs/custom_websearch_llm_agent_with_llama3_instruct_8B_using_ollama',
-    },
-    {
-      title: 'Stream Processing in Databricks Lakehouse with Unity Catalog',
-      description: 'Created storage containers in ADLS Gen2 for metadata and tables. Supported batch and streaming workflows. Designed and implemented secure Lakehouse platform with Unity Catalog. Generated workout BPM and gym summary datasets. Automated deployment pipeline in Azure DevOps.',
-      tech: ['Azure Databricks', 'Unity Catalog', 'ADLS Gen2', 'Azure DevOps', 'Key Vault', 'PySpark'],
-      gradient: 'from-green-600 to-emerald-600',
-      icon: '🏋️',
-      github: 'https://github.com/sivaramgs/Gymnasiam_Stream-Processing-in-Azure-Databricks-Lakehouse-following-Medallion-Architecture',
-    },
-    {
-      title: 'End to End Azure Data Engineering Real-Time Project',
-      description: 'Data ingestion from on-premises SSMS to Azure using Data Factory. Transformed RAW data using Azure Databricks. Loaded clean data (gold tables) to Synapse Analytics. Created interactive dashboard in Power BI. Integrated Azure Active Directory with Key Vault for authentication.',
-      tech: ['Azure Data Factory', 'ADLS Gen2', 'Databricks', 'Synapse Analytics', 'Power BI', 'Active Directory'],
-      gradient: 'from-sky-500 to-blue-600',
-      icon: '☁️',
-      github: 'https://github.com/sivaramgs/End-to-End-Azure-Data-Engineering-Real-Time-Project',
-    },
-    {
-      title: 'Generative Adversarial Network for Fashion MNIST with TensorFlow',
-      description: 'Preprocessed Fashion MNIST dataset through caching, shuffling, batching, and prefetching. Built Generator to transform random noise into realistic fashion images. Built Discriminator to distinguish fake from real images. Trained GAN for 100 epochs and reviewed performance by plotting losses.',
-      tech: ['TensorFlow', 'Fashion MNIST', 'GANs', 'Deep Learning', 'Python'],
-      gradient: 'from-pink-500 to-rose-500',
-      icon: '👗',
-      github: 'https://github.com/sivaramgs/Generative-Adversarial-Neural-Network-for-Fashion-Mnist-with-Tensorflow',
-    },
   ]
 
   return (
