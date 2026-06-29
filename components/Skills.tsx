@@ -56,7 +56,7 @@ const Skills = () => {
       color: 'from-purple-500 to-purple-700',
     },
     {
-      title: 'Cloud & DevOps:,
+      title: 'Cloud & DevOps',
       icon: Cloud,
       skills: ['AWS', 'Azure', 'Kubernetes (K8s)', 'Docker', 'Istio', 'ELK Stack', 'MinIO'],
       color: 'from-orange-500 to-orange-700',
