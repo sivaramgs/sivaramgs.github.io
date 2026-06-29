@@ -33,13 +33,13 @@ const Experience = () => {
       duration: 'April 2020 - Present',
       location: 'Bengaluru, India',
       achievements: [
-        'Integrated Glean for a unified AI-powered enterprise search and knowledge discovery.',
-        'Delivered evGPT, a production RAG solution built with Langraph, LangChain,and GPT-5.',
-        'Delivered ML-driven analytics for NBA, MLB, NHL boosting fans engagement by 84%.',
-        'Built real-time Easelive ETL pipelines with 90% faster game analytics reporting.',
-        'Sphere-headed deployments of inSITE (ELK Stack big data analytics) for global clients.',
-        'Engineered production MLOps for inSITE Logsnap to detect model drift in observability.',
-        'Scrum Master, driving agile sprints and delivers impactful presentations to C-suite leaders.',
+        'Served as AI technical lead for a 10-person cross-functional team across India and Poland; defined quarterly AI roadmaps, drove model governance practices, and delivered ROI-driven business cases and strategic AI adoption recommendations to C-Suite stakeholders.',
+        'Architected and Built evISR (Intelligence, Surveillance, and Reconnaissance) multi-agent AI system to generate summary of live video streams.',
+        'Led end-to-end delivery of evGPT, a production RAG platform (LangGraph, LangChain, GPT-5.2) of indexing 1 GB/day data, in <2 secs latency.',
+        'Architected Glean, a unified AI enterprise search platform, indexing 100+ documents/day with sub-second relevance ranking across sources.',
+        'Led real-time ML analytics for Easelive (NBA, MLB and NHL), processing 1K–2K events/sec and driving 84% fan engagement uplift.',
+        'Owned global inSITE deployments for WBD, Fox, Disney, and du, operating ELK pipelines ingesting 50 GB/day at 99.9% availability SLOs.',
+        'Built a custom production MLOps framework (mlflow, zenml) for inSITE Logsnap, orchestrating monitoring across 10–20 models in batch and streaming workloads using custom drift detectors; reduced data drift detection time under 10 minutes via statistical monitoring (PSI, KS-test).',
       ],
       color: 'from-primary-500 to-primary-700',
     },
@@ -50,9 +50,9 @@ const Experience = () => {
       duration: 'June 2017 - March 2020',
       location: 'Bengaluru, India',
       achievements: [
-        'Built and optimized data pipelines for Digital Lifecare improving accuracy and reliability.',
-        'Containerized the Dell EMC Solutions Enabler product, reducing OS image size by 70%.',
-        'Awarded US Patent-11256553: Intelligent System to Prioritize Servers for Envisaged Requests.',
+        'Designed and optimized production ML/DL inference pipelines for Dell Digital Lifecare, powering the Government of India Ayushman Bharat NCD program; models enabled preventive screening and risk stratification for diabetes, hypertension, and cancer across millions of people.',
+        'Designed and containerized Dell EMC Solutions Enabler, reducing image size by 70% and provided solution to run application under non-root.',
+        'Named Inventor on US Patent 11256553, an intelligent system for dynamic server prioritization to improve request handling efficiency.',
       ],
       color: 'from-blue-500 to-blue-700',
     },
@@ -63,9 +63,9 @@ const Experience = () => {
       duration: 'July 2016 - June 2017',
       location: 'Bengaluru, India',
       achievements: [
-        'Designed and delivered a Video on Demand non-linear delivery workflow for Comcast.',
-        'Enabled automated ad-insertion in content packaging, reduced operator workloads by 60%.',
-        'Configured and Deployed File based Media Asset Management Playout systems.',
+        'Delivered production Video-On-Demand (non-linear delivery workflow) for Comcast, enabling automated C3, C7, D4 (Dynamic Ad Insertion).',
+        'Configured and deployed File based Playout systems for Media Asset Management of global clients (PBS, Blue Ant Media, Channel One).',
+        'Written backend scripts to automate ad-insertion (National and local ads) in content packaging pipelines, reducing operator workload by 60%.',
       ],
       color: 'from-purple-500 to-purple-700',
     },
@@ -85,7 +85,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            9.5+ years of delivering impactful AI/ML and data science solutions
+            10 years of delivering impactful AI/ML and data science solutions.
           </p>
         </motion.div>
 
