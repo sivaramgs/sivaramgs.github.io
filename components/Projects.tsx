@@ -44,6 +44,23 @@ const Projects = () => {
       github: 'https://github.com/sivaramgs/Agentic_AI_Customer_Service_Databricks_RAG_App_with_MCP_Tools',
     },
     {
+      title: 'Multi Agent Creative Studio with Google ADK A2A MCP on CloudRun Agent-Runtime',
+      description: 'A distributed multimodal multi-agent system for Instagram campaign generation',
+      tech: ['Google ADK', 'A2A Protocol', 'MCP', 'Gemini 3.1 Flash LLM', 'Cloud Run','Gemini Enterprise Agent Platform Runtime'],
+      gradient: 'from-orange-500 to-red-500',
+      icon: '',
+      github: 'https://github.com/sivaramgs/Multi_Agent_Creative_Studio_with_Google_ADK_A2A_MCP_on_CloudRun_Agent-Runtime',
+    },
+    {
+      title: 'Sentiment Analysis on Bing News Data Using Microsoft Fabric',
+      description: 'Ingested data from Bing V7 API using Fabric Data Factory. Transformed data to curated Delta Table with incremental loading. Performed sentiment analysis classifying news as Positive/Negative/Neutral/Mixed. Used DAX queries in Power BI and configured alerts using Data Activator.',
+      tech: ['Microsoft Fabric', 'Bing API', 'Data Factory', 'Synapse', 'Power BI', 'Data Activator'],
+      gradient: 'from-blue-600 to-cyan-600',
+      icon: '📊',
+      github: 'https://github.com/sivaramgs/End-to-End-Azure-Data-Engineering-Real-Time-Project',
+    },
+    
+    {
       title: 'Inference of LaMini with Amazon SageMaker using Hugging Face DLC',
       description: 'Created domain in Amazon SageMaker and deployed LaMini-T5-738M using Hugging Face Deep Learning Container. Tuned the model with hyperparameter payload and integrated with Gradio for text2text-generation inference.',
       tech: ['LaMini-T5-738M', 'Amazon SageMaker', 'Hugging Face DLC', 'PyTorch', 'Gradio', 'Python'],
@@ -66,14 +83,6 @@ const Projects = () => {
       gradient: 'from-indigo-500 to-purple-500',
       icon: '🔎',
       github: 'https://github.com/sivaramgs/custom_websearch_llm_agent_with_llama3_instruct_8B_using_ollama',
-    },
-    {
-      title: 'Sentiment Analysis on Bing News Data Using Microsoft Fabric',
-      description: 'Ingested data from Bing V7 API using Fabric Data Factory. Transformed data to curated Delta Table with incremental loading. Performed sentiment analysis classifying news as Positive/Negative/Neutral/Mixed. Used DAX queries in Power BI and configured alerts using Data Activator.',
-      tech: ['Microsoft Fabric', 'Bing API', 'Data Factory', 'Synapse', 'Power BI', 'Data Activator'],
-      gradient: 'from-blue-600 to-cyan-600',
-      icon: '📊',
-      github: 'https://github.com/sivaramgs/End-to-End-Azure-Data-Engineering-Real-Time-Project',
     },
     {
       title: 'Stream Processing in Databricks Lakehouse with Unity Catalog',
