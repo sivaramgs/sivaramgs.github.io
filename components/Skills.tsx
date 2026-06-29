@@ -64,7 +64,7 @@ const Skills = () => {
     {
       title: 'Enterprise Vibe Coding Tools',
       icon: GitBranch,
-      skills: ['Claude CLI', 'Gemini CLI', 'Github Co-pilot]',
+      skills: ['Claude CLI', 'Gemini CLI', 'Github Co-pilot'],
       color: 'from-pink-500 to-pink-700',
     },
   ]
