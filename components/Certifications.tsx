@@ -25,6 +25,20 @@ const Certifications = () => {
 
   const certifications = [
     {
+      title: 'Neo4j Certified Professional',
+      issuer: 'Neo4j',
+      credential: 'View Certificate',
+      image: '/assets/img/neo4j.png',
+      link: 'https://graphacademy.neo4j.com/c/983acb8d-8ddc-4514-9e6f-1a2f16c16013/',
+    },
+    {
+      title: 'Neo4j Graph Data Science',
+      issuer: 'Neo4j',
+      credential: 'View Certificate',
+      image: '/assets/img/neo4j_gds.png',
+      link: 'https://graphacademy.neo4j.com/c/076a5de4-4015-4c38-aa93-2e18048da355/',
+    },
+    {
       title: 'AWS Cloud Quest: Machine Learning',
       issuer: 'Amazon Web Services',
       credential: 'View Certificate',
