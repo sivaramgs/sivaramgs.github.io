@@ -91,9 +91,9 @@ const About = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2 text-white">Professional Background</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Senior Data Science Engineer with 9.5+ years of experience in building, fine-tuning, and 
-                      deploying LLMs and ML systems. Leading a team of six members while delivering 
-                      cutting-edge AI solutions.
+                      Innovative Senior Data Science Engineer with 10 years of experience in driving the delivery of end-to-end production AI systems from design to
+customer deployment. Expert in architecting autonomous multi-agent systems, agentic workflows and data science lifecycles. Proven track record
+of transforming complex enterprise data into high-value, secure, and scalable AI solutions that drive measurable business growth and impact.
                     </p>
                   </div>
                 </div>
