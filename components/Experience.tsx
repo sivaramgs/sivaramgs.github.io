@@ -51,7 +51,7 @@ const Experience = () => {
       location: 'Bengaluru, India',
       achievements: [
         'Designed and optimized production ML/DL inference pipelines for Dell Digital Lifecare, powering the Government of India Ayushman Bharat.',
-        'Designed and containerized Dell EMC Solutions Enabler, reducing image size by 70% and provided solution to run application under non-root.',
+        'Designed and containerized Dell EMC Solutions Enabler, reducing image size by 70% and running the applications under postgres user.',
         'Named Inventor on US Patent 11256553, an intelligent system for dynamic server prioritization to improve request handling efficiency.',
       ],
       color: 'from-blue-500 to-blue-700',
