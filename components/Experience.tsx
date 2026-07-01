@@ -34,7 +34,7 @@ const Experience = () => {
       location: 'Bengaluru, India',
       achievements: [
         'Served as AI technical lead for a 10-person cross-functional team across India and Poland; defined quarterly AI roadmaps, drove model governance practices, and delivered ROI-driven business cases and strategic AI adoption recommendations to C-Suite stakeholders.',
-        'Architected and Built evISR (Intelligence, Surveillance, and Reconnaissance) multi-agent AI system to generate summary of live video streams.',
+        'Architected and Built evISR (Intelligence, Surveillance, and Reconnaissance) multi-agent AI system to generate summary of live video streams; showcased at DefTech Conference 2026 as a scalable central command and control solution for synchronized real-time monitoring.',
         'Led end-to-end delivery of evGPT, a production RAG platform (LangGraph, LangChain, GPT-5.2) of indexing 1 GB/day data, in <2 secs latency.',
         'Architected Glean, a unified AI enterprise search platform, indexing 100+ documents/day with sub-second relevance ranking across sources.',
         'Led real-time ML analytics for Easelive (NBA, MLB and NHL), processing 1K–2K events/sec and driving 84% fan engagement uplift.',
@@ -50,7 +50,7 @@ const Experience = () => {
       duration: 'June 2017 - March 2020',
       location: 'Bengaluru, India',
       achievements: [
-        'Designed and optimized production ML/DL inference pipelines for Dell Digital Lifecare, powering the Government of India Ayushman Bharat NCD program; models enabled preventive screening and risk stratification for diabetes, hypertension, and cancer across millions of people.',
+        'Designed and optimized production ML/DL inference pipelines for Dell Digital Lifecare, powering the Government of India Ayushman Bharat.',
         'Designed and containerized Dell EMC Solutions Enabler, reducing image size by 70% and provided solution to run application under non-root.',
         'Named Inventor on US Patent 11256553, an intelligent system for dynamic server prioritization to improve request handling efficiency.',
       ],
