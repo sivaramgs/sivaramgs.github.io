@@ -55,8 +55,8 @@ const Projects = () => {
       title: 'Sentiment Analysis on Bing News Data Using Microsoft Fabric',
       description: 'Ingested data from Bing V7 API using Fabric Data Factory. Transformed data to curated Delta Table with incremental loading. Performed sentiment analysis classifying news as Positive/Negative/Neutral/Mixed. Used DAX queries in Power BI and configured alerts using Data Activator.',
       tech: ['Microsoft Fabric', 'Bing API', 'Data Factory', 'Synapse', 'Power BI', 'Data Activator'],
-      gradient: 'from-blue-600 to-cyan-600',
-      icon: '📊',
+      gradient: 'from-orange-500 to-red-500',
+      icon: '',
       github: 'https://github.com/sivaramgs/End-to-End-Azure-Data-Engineering-Real-Time-Project',
     },
   ]
