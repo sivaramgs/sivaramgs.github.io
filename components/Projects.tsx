@@ -36,6 +36,14 @@ const Projects = () => {
    */
   const projects = [
     {
+      title: 'TravelAdvisor AI With MCP',
+      description: 'Mult-Agent AI travel planner that turns a user trip request into a perfect travel plan with flight and hotel suggestions, weather details, and a complete itinerary.',
+      tech: ['Groq LLM', 'Tavily API', 'AviationStack API', 'Openweather API', 'Langchain', 'LangGraph', 'Langsmith', 'FastAPI', 'Render', 'Docker'],
+      gradient: 'from-blue-500 to-red-500',
+      icon: '',
+      github: 'https://github.com/sivaramgs/TravelAdvisor_AI_With_MCP',
+    },
+    {
       title: 'Agentic AI Customer Service Databricks RAG App With Unity Catalog Functions as MCP Tools',
       description: 'Created a dual source RAG solution for a customer service scenario and used UC functions as MCP tools',
       tech: ['gemma-3-12b-it', 'Databricks AI Agent', 'Delta Tables', 'MLFLOW', 'Unity Catalog Functions', 'RAG', 'MCP'],
@@ -47,7 +55,7 @@ const Projects = () => {
       title: 'Multi Agent Creative Studio with Google ADK A2A MCP on CloudRun Agent-Runtime',
       description: 'A distributed multimodal multi-agent system for Instagram campaign generation',
       tech: ['Google ADK', 'A2A Protocol', 'MCP', 'Gemini 3.1 Flash LLM', 'Cloud Run','Gemini Enterprise Agent Platform Runtime'],
-      gradient: 'from-orange-500 to-red-500',
+      gradient: 'from-green-500 to-red-500',
       icon: '',
       github: 'https://github.com/sivaramgs/Multi_Agent_Creative_Studio_with_Google_ADK_A2A_MCP_on_CloudRun_Agent-Runtime',
     },
@@ -55,7 +63,7 @@ const Projects = () => {
       title: 'Sentiment Analysis on Bing News Data Using Microsoft Fabric',
       description: 'Ingested data from Bing V7 API using Fabric Data Factory. Transformed data to curated Delta Table with incremental loading. Performed sentiment analysis classifying news as Positive/Negative/Neutral/Mixed. Used DAX queries in Power BI and configured alerts using Data Activator.',
       tech: ['Microsoft Fabric', 'Bing API', 'Data Factory', 'Synapse', 'Power BI', 'Data Activator'],
-      gradient: 'from-orange-500 to-red-500',
+      gradient: 'from-purple-500 to-red-500',
       icon: '',
       github: 'https://github.com/sivaramgs/End-to-End-Azure-Data-Engineering-Real-Time-Project',
     },
