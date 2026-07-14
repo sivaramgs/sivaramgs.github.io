@@ -69,6 +69,18 @@ const Experience = () => {
       ],
       color: 'from-purple-500 to-purple-700',
     },
+    {
+      company: 'Honeywell Technologies',
+      logo: '/assets/img/honeywell.png',
+      position: 'Intern',
+      duration: 'Nov 2015 - June 2016',
+      location: 'Bengaluru, India',
+      achievements: [
+        'Built a Configuration Assessment Tool in Java automating Windows and Linux security configuration reviews against CIS (Center for Internet Security) benchmarks.',
+        'Conducted security assessments and penetration testing on web applications using Burp Suite to identify and report OWASP Top 10 vulnerabilities in various internal and external customer facing products.',
+      ],
+      color: 'from-purple-500 to-purple-700',
+    },
   ]
 
   return (
