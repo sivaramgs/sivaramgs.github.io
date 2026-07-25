@@ -36,6 +36,14 @@ const Projects = () => {
    */
   const projects = [
     {
+      title: 'A sovereign, on-premise Multi-Agent Engine for ICD-10 Clinical Coding',
+      description: 'An enterprise-grade, privacy-preserving, local-first architecture designed for secure clinical entity extraction and automated multi-axial ICD-10-CM diagnostic code mapping.',
+      tech: ['Sea-Lion 8B', 'MERaLiON-8B', 'Nomic Text Model', 'FastAPI', 'Langfuse', 'Ray', 'Ollama', 'Qdrant', 'Redis', 'A2A', 'MCP', 'nginx'],
+      gradient: 'from-green-500 to-red-500',
+      icon: '',
+      github: 'https://github.com/sivaramgs/clinical_coder',
+    },
+    {
       title: 'TravelAdvisor AI With MCP',
       description: 'Mult-Agent AI travel planner that turns a user trip request into a perfect travel plan with flight and hotel suggestions, weather details, and a complete itinerary.',
       tech: ['Groq LLM', 'Tavily API', 'AviationStack API', 'Openweather API', 'Langchain', 'LangGraph', 'Langsmith', 'FastAPI', 'Render', 'Docker'],
