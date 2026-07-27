@@ -66,7 +66,7 @@ const About = () => {
                 {/* Quick Stats */}
                 <div className="mt-4 flex justify-center gap-2">
                   <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
-                    9.5+ Years
+                    10 Years
                   </span>
                   <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
                     US Patent Holder
