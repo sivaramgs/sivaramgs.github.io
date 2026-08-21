@@ -30,7 +30,7 @@ const Experience = () => {
       company: 'Evertz India Pvt Ltd',
       logo: '/assets/img/evertz_logo.jpg',
       position: 'Senior Data Science Engineer',
-      duration: 'April 2020 - Present',
+      duration: 'April 2020 - June 2026',
       location: 'Bengaluru, India',
       achievements: [
         'Served as AI technical lead for a 10-person cross-functional team across India and Poland; defined quarterly AI roadmaps, drove model governance practices, and delivered ROI-driven business cases and strategic AI adoption recommendations to C-Suite stakeholders.',
